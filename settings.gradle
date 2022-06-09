@@ -16,3 +16,4 @@ rootProject.name = "ImageLoader"
 include ':sample'
 include ':SRP'
 include ':OCP'
+include ':DIP'
