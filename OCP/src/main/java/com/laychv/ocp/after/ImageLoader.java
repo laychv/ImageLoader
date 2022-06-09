@@ -18,7 +18,7 @@ public class ImageLoader {
 
     private ImageCache cache = new MemoryCache();
 
-    private ExecutorService service = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+    private final ExecutorService service = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 
     public void displayImage(String url, ImageView imageView) {
         Bitmap bitmap = cache.get(url);
